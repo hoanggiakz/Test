@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/muahoa.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="..//js/form-hoahong-script.js"></script>
+    <title>Dat Mua Hoa</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header">
+
+        </div>
+        <div class="row nav">
+            <ul class="text-info" style="font-weight: bold; font-family: 'Times New Roman', Times, serif;">
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalId">ĐẶT MUA HOA</a></li>
+                <li><a href="#">CÂY XANH VĂN PHÒNG</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+            </ul>
+
+        </div>
+
+        <div class="row">
+            <div class="row col-3 left"></div>
+            <div class="row col-9 main m-2">
+                <div>
+                    <table class=" table table-striped">
+                        <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">DANH SÁCH THÔNG TIN ĐẶT HÀNG NHANH</h1>
+                        <thead>
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">HỌ VÀ TÊN</th>
+                                <th scope="col">SỐ ĐIỆN THOẠI</th>
+                                <th scope="col">NGÀY ĐẶT</th>
+                                <th scope="col">EMAIL CỦA BẠN</th>
+                                <th scope="col">LOẠI HOA</th>
+                                <th scope="col">LOẠI THANH TOÁN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row footer">
+            <p style="text-align: center;">MSSV: 22003145 Lớp: DHHTTT18A Họ và tên: Nguyen Hoang Gia</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center" id="modalTitleId">
+                        THÔNG TIN ĐẶT HÀNG NHANH
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row mt-3">
+                        <div class="col-3" style="text-align: right;">
+                            <label for="" class="form-label mt-2">Họ và tên</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" name="" class="form-control" id="txtHoTen" placeholder="Nhập họ tên">
+                            <span style="color: red;" id="spanHoTen">*</span>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-3">
+                        <div class="col-3" style="text-align: right;">
+                            <label for="" class="form-label mt-2">Số Điện Thoại</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" name="" class="form-control" id="txtSDT" placeholder="Nhập số điện thoai">
+                            <span style="color: red;" id="spanSDT">*</span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-3" style="text-align: right;">
+                            <label for="" class="form-label mt-2">Ngày đặt</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="date" name="" class="form-control" id="txtNgayDat" placeholder="Nhập ngày đặt">
+                            <span style="color: red;" id="spanNgayDat">*</span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-3" style="text-align: right;">
+                            <label for="" class="form-label mt-2">Email của bạn</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" name="" class="form-control" id="txtEmail" placeholder="Nhập email">
+                            <span style="color: red;" id="spanEmail">*</span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-3" style="text-align: right;">
+                            <label for="" class="form-label mt-2">Chọn loại hoa</label>
+                        </div>
+                        <div class="col-9">
+                            <select name="" id="txtLoaiHoa" class="form-control">
+                                <option value="Hoa Hồng Nhung">Hoa Hồng Nhung</option>
+                                <option value="Hoa Hồng Vàng">Hoa Hồng Vàng</option>
+                                <option value="Hoa Hồng Tráng">Hoa Hồng Tráng</option>
+                                <option value="Hoa Lan">Hoa Lan</option>
+                                <option value="Hoa Nhiều Loại">Hoa Nhiều Loại</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-3" style="text-align: right;">
+                            <label for="" class="form-label mt-2">Loại thanh toán</label>
+                        </div>
+                        <div class="row col-9 mt-3">
+                            <div class="col-3 ">
+                                <input type="radio" id="radioTM" name="htth"> Tiền mặt
+                            </div>
+                            <div class="col-6">
+                                <input type="radio" id="radioCK" name="htth"> Chuyển khoản
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnDatHang" class="btn btn-success col-12" data-bs-dismiss="modal">
+                        Đặt hàng
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

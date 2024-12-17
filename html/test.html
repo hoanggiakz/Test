@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dat Hoa </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/test.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="..//js/jquery-3.7.1.min.js"></script>
+    <script src="../js/test.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header">
+            <img src="../img/mau-banner-dich-vu-dien-hoa-dep-mat-thu-hut-1.jpg" alt="">
+        </div>
+        <div class="row nav">
+            <ul class="nav-item" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">
+                <li>
+                    <a href="#">Trang Chu</a>
+                </li>
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalId">Dat Mua Hoa</a>
+                </li>
+                <li>
+                    <a href="#">Tin Tuc</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row main">
+            <div class="col-lg-3">
+                <img src="../img/hinh2.webp" alt="" style="width: 300px;">
+            </div>
+            <div class="col-9">
+                <div class="table-responsive">
+                    <h1 style="text-align: center; font-family: Arial, " Helvetica Neue ", Helvetica, sans-serif;">DANH SÁCH THÔNG TIN ĐẶT HÀNG NHANH
+                    </h1>
+                    <table class="table table-primary">
+                        <thead>
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Ho Ten</th>
+                                <th scope="col">So dien thoai</th>
+                                <th scope="col">Ngay dat</th>
+                                <th scope="col">Email cua ban</th>
+                                <th scope="col">Loai Hoa</th>
+                                <th scope="col">Loai Thanh Toan </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="row footer">
+            <p style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Nguyen Hoang Gia 22003145</p>
+        </div>
+
+        <!-- Modal trigger button -->
+
+
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId"> Thong Tin Dat Hang Nhanh
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mt-3">
+                            <div class="col-3">
+                                <label> Ho Ten</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="txtHoTen" placeholder="Nhap Ho Ten">
+                                <span id="spanHoTen" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3">
+                                <label> So Dien Thoai</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="txtSDT" placeholder="Nhap So Dien Thoai">
+                                <span id="spanSDT" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3">
+                                <label> Ngay Dat</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="date" class="form-control" id="txtNgayDat" placeholder="Chon Ngay Dat">
+                                <span id="spanNgayDat" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3">
+                                <label> Email</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="txtEmail" placeholder="Nhap Email">
+                                <span id="spanEmail" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3">
+                                <label> Loai Hoa</label>
+                            </div>
+                            <div class="col-9">
+                                <select id="txtLoaiHoa" class="form-control">
+                                    
+                                    <option  value="1">Hoa Tuoi</option>
+                                    <option value="2">Hoa Hon</option>
+                                    <option value="3">Hoa Vang</option>
+                                    <option value="4">Hoa Hoa Lan</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3">Loai Thanh Toan</div>
+                            <div class="col-9">
+                                <div class="col-3">
+                                    <input type="radio" id="radioTM" name="httt"> Tien Mat
+                                </div>
+
+                                <div class=" col-6 ">
+                                    <input type="radio" id="radioCK" name="httt"> Chuyen Khoan
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " id="btnDatHang" class="btn btn-success col-12 " data-bs-dismiss="modal ">
+                            Dat Mua
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

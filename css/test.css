@@ -1,0 +1,8 @@
+    ul li {
+        display: inline-block;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        margin: 30px;
+    }
